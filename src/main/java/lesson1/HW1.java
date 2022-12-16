@@ -27,8 +27,8 @@ public class HW1 {
         //System.out.println("Inverted array" + task6());
         //System.out.println("Massive on 100 numbers" + task7());
         //System.out.println("multiplied array " + task8());
-        //System.out.println("two-dimensional array -  " + twoDimArray()); // ---
-        System.out.println(wordbuild("HI", 5));
+        System.out.println("two-dimensional array -  " + twoDimArray()); // ---
+       // System.out.println(wordbuild("HI", 5));
         //System.out.println("Maximal element in array " + task11());
         //System.out.println("Minimal element in array " + task12());
     }
@@ -174,27 +174,20 @@ public class HW1 {
 // с помощью цикла(-ов) заполнить его диагональные элементы единицами (можно только одну из диагоналей,
 // если обе сложно). Определить элементы одной из диагоналей можно по следующему принципу:
 // индексы таких элементов равны, то есть [0][0], [1][1], [2][2], …, [n][n];
-        int [][] twoDimArr = new int[4][4];
+        int[][] twoDimArr = new int[4][4];
         //System.out.println(twoDimArr);
 
         for (int i = 0; i < twoDimArr.length; i++) {
-            //System.out.print(" " + twoDimArr[i] + " ");
-            for (int j = 0, z = twoDimArr.length -1; j <twoDimArr.length; j++ , z--) {
-                if (i==j || i ==z) {
-                    twoDimArr[i][j] = 1;
-                } else {
-                    twoDimArr[i][j] = 0;
-                    System.out.println(" "+ twoDimArr[i][j] + " ");
-                }
-            }
-            System.out.println();
-        }
-        {
 
+                System.out.println(" " + twoDimArr[i][i] + " ");
+            }
+
+        System.out.println();
+        {
             return "";
         }
-
     }
+
 
     private static String wordbuild(String initialValue, int len ) {
         //5. Написать метод, принимающий на вход два аргумента: len и initialValue, и возвращающий одномерный массив

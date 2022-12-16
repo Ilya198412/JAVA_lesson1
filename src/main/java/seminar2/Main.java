@@ -14,9 +14,9 @@ public class Main {
     static Logger logger = Logger.getLogger("Lesson 2");
     public static void main(String[] args) {
         /*System.out.println(buildstring('X', 'o', 21 ));
-        System.out.println(buildstring());
-        System.out.println(doSimpleString("aaaaassssdffftytytytttt ghhjjj"));*/
-        printIntoFileNames("E:\\Илья\\обучение");
+        System.out.println(buildstring());*/
+        System.out.println(doSimpleString("aaaaassssdffftytytyttt t ghhjjj"));
+        //printIntoFileNames("E:\\Илья\\обучение");
     }
 
     private static void printIntoFileNames(String path) {
