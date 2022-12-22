@@ -10,13 +10,21 @@ public class MyQueue {
     public static void main(String[] args) {
         //add("hello"); // добавить в конец
         //peek(); // посмотреть первое в очереди
-        poll(); // извлечь и вернуть первое в очереди
-
+        //poll(); // извлечь и вернуть первое в очереди
+        revesedList();
 
     }
 
+    private static void revesedList() {
 
 
+
+        LinkedList<String> greetings = new LinkedList<>();
+        Collections.addAll(greetings, "Hi", "Good Morning", "Good Evening", "Good Day" );
+        System.out.println(greetings);
+        Collections.reverse(greetings);
+        System.out.println(greetings);
+    }
 
 
     private static void add(String hello) {
