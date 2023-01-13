@@ -18,12 +18,12 @@ public class HW5 {
         System.out.println("Enter name: ");
         String userName = scan.next();
         Map<String, ArrayList<String>> phoneBook = new HashMap<>();
-        phoneBook.put("Kangaroo",  new ArrayList<>());
-        phoneBook.put("Elephant",  new ArrayList<>());
-        phoneBook.put("Monkey",  new ArrayList<>());
-        phoneBook.put("Tiger",  new ArrayList<>());
-        phoneBook.put("Lion",  new ArrayList<>());
-        phoneBook.put("Snake",  new ArrayList<>());
+        phoneBook.putIfAbsent("Kangaroo",  new ArrayList<>());
+        phoneBook.putIfAbsent("Elephant",  new ArrayList<>());
+        phoneBook.putIfAbsent("Monkey",  new ArrayList<>());
+        phoneBook.putIfAbsent("Tiger",  new ArrayList<>());
+        phoneBook.putIfAbsent("Lion",  new ArrayList<>());
+        phoneBook.putIfAbsent("Snake",  new ArrayList<>());
         phoneBook.get("Kangaroo").add("3333");
         phoneBook.get("Kangaroo").add("4444");
         phoneBook.get("Kangaroo").add("55555");
@@ -33,7 +33,7 @@ public class HW5 {
         phoneBook.get("Tiger").add("55555");
         phoneBook.get("Lion").add("55555");
         phoneBook.get("Monkey").add("55555");
-        phoneBook.put("Cake",  new ArrayList<>());
+        phoneBook.putIfAbsent("Cake",  new ArrayList<>());
         phoneBook.get("Cake").add("21312");
 
         for(Map.Entry<String, ArrayList<String>> entry : phoneBook.entrySet()) {
